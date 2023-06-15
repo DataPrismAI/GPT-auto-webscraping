@@ -10,6 +10,7 @@ if 'DEFAULT' in config:
 
 st.title("Web Scraping Assistant")
 st.write("This app helps you to extract data from HTML code using web scraping. It uses GPT-3.5-turbo to generate the code for you.")
+st.write("Contribute to this project on [GitHub](https://github.com/CognitiveLabs/GPT-auto-webscraping)")
 if assistant_api_key == '':
     assistant_api_key = st.text_input("Paste your API key here:")
     if assistant_api_key:
