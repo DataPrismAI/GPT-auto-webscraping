@@ -13,6 +13,8 @@ system_template_output_format = PromptTemplate(
 
     The assitant answer should ONLY contain the JSON information without any aditional word or character.
 
+    The JSON output must have 1 depth level as much.
+
     The expected output format is an array of objects.
     
     ''')
