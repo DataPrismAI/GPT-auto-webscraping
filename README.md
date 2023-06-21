@@ -2,6 +2,8 @@
 This project is a tool to generate code for web scrapping using ChatGPT. The idea is to use the power of the GPT models to generate code for web scrapping projects.
 The tech stack used includes langchain, streamlit, and openai.
 
+Try it: [Space 🤗](https://huggingface.co/spaces/CognitiveLabs/GPT-auto-webscraping)
+
 ## Development
 (Recomended to use a **virtual environment**, see [Venv](https://docs.python.org/3/tutorial/venv.html) for more information about)
 
