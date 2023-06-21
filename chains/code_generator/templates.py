@@ -13,7 +13,7 @@ system_template_script = PromptTemplate(
     The example of the html content is: {html_content}
     --------------------------------
     You have to create a python function that extract information from an html code using web scrapping.
-    Try to select the most low-level class that is common among the elements to make de find_all function.
+    Try to select the deeper class that is common among the elements to make de find_all function.
 
     Your answer SHOULD only contain the python function code without any aditional word or character.
 
@@ -24,6 +24,8 @@ system_template_script = PromptTemplate(
     The function have to receive the html data as a parameter.
 
     Your function needs to extract information for all the elements with similar attributes.
+
+    An element could have missing attributes
 
     Before calling .text or ['href'] methods, check if the element exists.
 
