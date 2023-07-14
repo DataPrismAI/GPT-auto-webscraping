@@ -20,15 +20,15 @@ else:
 
 html_content = st.text_input("Paste your piece of HTML here:")
 
-if html_content:
-    if st.button("Extract data format"):
-        try:
-            output = gpt_assistant.chain_response_format(html_content)
-            st.session_state['output_format'] = output
-        except NameError:
-            st.write("Complete the API key field")
-        except AuthenticationError:
-            st.write("Invalid API key")
+extract_button = st.button("Extract data format")
+if html_content and extract_button:
+    try:
+        output = gpt_assistant.chain_response_format(html_content)
+        st.session_state['output_format'] = output
+    except NameError:
+        st.write("Complete the API key field")
+    except AuthenticationError:
+        st.write("Invalid API key")
 
 if 'output_format' in st.session_state:
     output_format = st.code(st.session_state['output_format'], language="json")
@@ -49,7 +49,8 @@ if 'code_generated' in st.session_state:
     python_function_label = st.write("Here is your python function:")
     code_generated = st.code(st.session_state['code_generated'],language="python")
     full_content = st.text_input("Paste your complete HTML here:")
-    if full_content and st.button("Test the code"):
+    test_code = st.button("Test the code")
+    if full_content and test_code:
         html_data = full_content
         result = None
         exec(st.session_state['code_generated_exec'], globals())
