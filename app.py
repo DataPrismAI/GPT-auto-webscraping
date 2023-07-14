@@ -59,3 +59,24 @@ if 'code_generated' in st.session_state:
             st.table(result)
         else:
             st.write("error extracting data")
+
+st.title("How to use this app")
+
+st.write("1. Paste the html code of your target element in the first text box and press \"Enter\"")
+example = st.button("Show example")
+if example:
+    example = False
+    text_area = st.text_area("Example", value='<li><div class="product"> <h3 class="title">Product 1</h3> <p class="description">This is the description of the product 1</p> <span class="price">10.00</span> </div></li>')
+    close_example = st.button("Close example")
+    if close_example:
+        example = False
+        close_example.disabled = True
+        text_area = None
+
+st.write("2. Click on the button 'Extract data format'")
+
+st.write("3. Click on the button 'Generate the code'")
+
+st.write("4. Paste the complete html code in the last text box to test the auto generated code")
+
+st.write("5. Copy the code and include it in your own projects")
