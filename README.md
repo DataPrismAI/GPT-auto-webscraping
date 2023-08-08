@@ -38,7 +38,7 @@ The idea of the project is to use GPT to automatize code generation for web scra
 
 ### Video Demo
 Watch the full video on [YouTube](https://www.youtube.com/watch?v=_zeCun4OlCc).
-![Demo video](https://j.gifs.com/gpqvPl.gif)
+![Demo gif](./demo.gif)
 
 
 # Steps to generate the code:
