@@ -37,7 +37,8 @@ The idea of the project is to use GPT to automatize code generation for web scra
 * The function will receive the HTML of the page and will return the information extracted from the page.
 
 ### Video Demo
-<a href="https://www.youtube.com/watch?v=_zeCun4OlCc"><img src="https://j.gifs.com/gpqvPl.gif" alt="Demo video" width="500"></a>
+[![Demo video](https://j.gifs.com/gpqvPl.gif | width=300)](https://www.youtube.com/watch?v=_zeCun4OlCc)
+
 
 
 # Steps to generate the code:
