@@ -6,7 +6,7 @@ import os
 class GPTAssistant():
     def __init__(self,api_key:str):
         os.environ['OPENAI_API_KEY'] = api_key
-        self.llm = ChatOpenAI(temperature=0, model_name='gpt-3.5-turbo', request_timeout=120, client=None)
+        self.llm = ChatOpenAI(temperature=0, model_name='gpt-3.5-turbo-16k', request_timeout=120, client=None)
 
     def chain_response_format(self, html_content):
         # prompt templates
